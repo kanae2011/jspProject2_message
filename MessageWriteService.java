@@ -3,7 +3,7 @@ package com.webjjang.message.service;
 import com.webjjang.main.controller.Service;
 import com.webjjang.message.dao.MessageDAO;
 import com.webjjang.message.vo.MessageVO;
-import com.webjjang.util.PageObject;
+
 
 
 			public class MessageWriteService implements Service {
@@ -27,7 +27,7 @@ import com.webjjang.util.PageObject;
 				public Object service(Object obj) throws Exception {
 				// TODO Auto-generated method stub
 				//넘어오는 데이터 확인 
-				System.out.println("MessageListService.obj : " + obj);
+				System.out.println("MessageWriteService.obj : " + obj);
 				//전체 데이터 가져오기
 				//dao의 write() 실행해서 결과를 리턴
 				 return dao.write((MessageVO)obj);
