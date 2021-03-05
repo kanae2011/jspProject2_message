@@ -75,12 +75,12 @@ $(function () {
 	</tr>
 	
 	<c:forEach items="${list }" var = "vo">
-	<tr class='dataRow ${(empty vo.acceptDate)?"noRead":"" }'>
+	<tr class="dataRow">
 		<td class="no">${vo.no }</td>
 		<td>${vo.sender }</td>
 		<td>${vo.sendDate }</td>
 		<td>${vo.accepter }</td>
-		<td>${(empty vo.acceptDate)?"읽지않음":vo.acceptDate }</td>
+		<td class='${(empty vo.acceptDate)?"noRead":"" }'>${(empty vo.acceptDate)?"읽지 않음":vo.acceptDate }</td>
 	</tr>
 	</c:forEach>
 	
